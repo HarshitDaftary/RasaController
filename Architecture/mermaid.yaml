@@ -1,0 +1,6 @@
+classDiagram
+FlaskWrapper <|-- AppDelegate : Networking
+FlaskWrapper : int port
+FlaskWrapper : startListening()
+AppDelegate <|-- Channel : Communication
+Channel <|-- User : Message

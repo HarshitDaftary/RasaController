@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/0.3.0/mermaid.full.min.js"></scr$
+    <script>
+function readTextFile(file)
+{
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                var allText = rawFile.responseText;
+                //alert(allText);
+                var node = document.getElementById('output');
+                node.innerText = allText;
+            }
+        }
+    }
+    rawFile.send(null);
+}
+readTextFile("mermaid.yaml");
+    </script>
+  </head>
+
+  <body>
+<div class="mermaid" id="output">
+classDiagram
+Class01 <|-- AveryLongClass : Cool
+  </div>
+  </body>
+
+</html>
+
+
