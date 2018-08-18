@@ -13,7 +13,7 @@ function readTextFile(file)
             if(rawFile.status === 200 || rawFile.status == 0)
             {
                 var allText = rawFile.responseText;
-                //alert(allText);
+                alert(allText);
                 var node = document.getElementById('output');
                 node.innerText = allText;
             }
@@ -21,7 +21,7 @@ function readTextFile(file)
     }
     rawFile.send(null);
 }
-readTextFile("mermaid.yaml");
+readTextFile("https://raw.githubusercontent.com/HarshitDaftary/RasaController/Develop/Architecture/mermaid.yaml");
     </script>
   </head>
 
