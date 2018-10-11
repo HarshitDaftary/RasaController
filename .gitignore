@@ -1,1 +1,3 @@
 .vscode/*
+remote_debug.py
+*.pyc

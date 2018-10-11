@@ -15,7 +15,7 @@ Rasa Controller is a framework for building chatbot:
 
 ## Integration ##
 
-- Slack bot
+- Web
 
 ### Why am I building this ? ###
 
